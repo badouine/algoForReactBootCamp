@@ -1,0 +1,24 @@
+ALGORITHM READ SENTENCE
+
+VAR
+nbr_mot := 0, nbr_voyelles := 0 : INTEGER
+espace := 0 : BOOLEAN
+
+TANT QUE 
+    lire('caractere', caractere);
+
+      Si (caractere) dans ['a', 'e', 'i', 'o', 'u'] alors 
+        nbr_voyelles + := 1
+
+        Si caractere := '' alors 
+            espace = TRUE 
+            
+            SINON SI espace alors 
+                nbr_mot +:= 1 
+                espace = FALSE 
+
+    SI caractere := ' . ' alors 
+        BREAK
+
+afficher('Nombre de mot:', nbr_mot)
+afficher('Nombre de voyelles:', nbr_voyelles)
