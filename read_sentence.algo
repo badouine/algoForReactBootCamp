@@ -20,7 +20,7 @@ TANT QUE
 
     SI caractere := ' . ' alors 
         BREAK
-
+    FIN SI
 afficher('Nombre de mot:', nbr_mot)
 afficher('Nombre de voyelles:', nbr_voyelles)
 
