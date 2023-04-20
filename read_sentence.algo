@@ -1,5 +1,6 @@
 ALGORITHM READ SENTENCE
 
+BEGIN
 VAR
 nbr_mot := 0, nbr_voyelles := 0 : INTEGER
 espace := 0 : BOOLEAN
@@ -22,3 +23,5 @@ TANT QUE
 
 afficher('Nombre de mot:', nbr_mot)
 afficher('Nombre de voyelles:', nbr_voyelles)
+
+END
