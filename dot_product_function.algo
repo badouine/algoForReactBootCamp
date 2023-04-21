@@ -4,6 +4,8 @@ VAR
     i: INTEGER
     ps:= 0
 BEGIN
+    SI (v1 <> v2) DO
+        Write('Vecteur doivent avoir meme taille')
     FOR(i=0 -> i < v1.length) DO 
         ps += v1[i] * v2[i]
     RETURN ps 
