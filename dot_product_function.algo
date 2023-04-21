@@ -7,7 +7,27 @@ BEGIN
     SI (v1 <> v2) DO
         Write('Vecteur doivent avoir meme taille')
     FOR(i=0 -> i < v1.length) DO 
-        ps += v1[i] * v2[i]
+        ps +:= v1[i] * v2[i]
     RETURN ps 
     END_FOR 
 END 
+
+******************************************************
+
+PROCEDURE prod_scalaire(v1,v2)
+VAR
+    v1,v2: ARRAY_OF_INTEGER,
+    i: INTEGER
+BEGIN
+    prod_scalaire:= 0
+  
+    FOR(i=0 -> i < v1.length) DO
+        prod_scalaire+:= v1[i] * v2[i]
+    END_FOR
+
+    IF(prod_scalaire:= 0) DO
+        Write('Vecteurs sont orthogonaux')
+    ELSE 
+        Write('Orthogonalite nul')
+    END_IF
+END
