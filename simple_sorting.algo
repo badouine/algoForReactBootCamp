@@ -1,0 +1,20 @@
+FUNCTION simple_sorting(tab) return array
+BEGIN
+VAR i,j: INTEGER
+tab: ARRAY_OF_INTEGER
+FOR (i=0 -> tab.length) DO
+    tab[i] := val 
+
+    j:= i - 1
+
+    END FOR 
+
+TANTQUE (j >= 0 et tab[j] > val) alors 
+        tab[j+1] := tab[j] 
+        j -:= 1 
+    tab[j+1] := val 
+FIN TANTQUE
+
+return tab
+
+END
