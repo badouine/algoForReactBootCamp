@@ -1,0 +1,11 @@
+FUNCTION dot_product(v1,v2) : return INTEGER
+VAR
+    tab: v1,v2 ARRAY_OF_INTEGER
+    i: INTEGER
+    ps:= 0
+BEGIN
+    FOR(i=0 -> i < v1.length) DO 
+        ps += v1[i] * v2[i]
+    RETURN ps 
+    END_FOR 
+END 

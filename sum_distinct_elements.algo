@@ -6,7 +6,7 @@ VAR
 tab1, tab2 : array
 i,n,j,sum:=0  : INTEGER
 
-POUR tab1[i]=0 -> tab2[j]=n-1 FAIRE 
+FOR tab1[i]=0 -> tab2[j]=n-1 FAIRE 
     IF (tab1[i] <> tab2[j]) alors 
         sum+= tab1[i] + tab2[j]
     END IF 
